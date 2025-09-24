@@ -1,0 +1,3 @@
+Simulation complete.
+Total data points processed: 166441
+Total alerts: 0
