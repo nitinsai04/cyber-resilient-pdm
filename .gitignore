@@ -1,0 +1,7 @@
+# logs & generated
+logs/
+data/generated_*.csv
+*.log
+*.tmp
+.DS_Store
+__pycache__/
