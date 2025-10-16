@@ -5,3 +5,8 @@ data/generated_*.csv
 *.tmp
 .DS_Store
 __pycache__/
+condition+monitoring+of+hydraulic+systems/*.txt
+simulation.log
+data/*.csv
+outputs/*.png
+__pycache__/
