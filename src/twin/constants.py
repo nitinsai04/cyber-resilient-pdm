@@ -1,7 +1,6 @@
-# src/twin/constants.py
 """
 Physical and simulation parameters for the data-generating Digital Twin.
-Units are indicative; tune to your needs.
+Tuned to align magnitude with Helwig hydraulic dataset (≈50 bar, 7 L/s).
 """
 
 # --- Mechanical / thermal ---
@@ -10,12 +9,12 @@ B0 = 0.02                # base viscous friction [N*m*s/rad]
 K_DEG = 0.15             # added friction per unit degradation theta [-]
 K_T = 0.08               # motor torque constant [N*m/V]
 TAU_TH = 15.0            # thermal time constant [s]
-T_ENV = 25.0             # ambient temp [°C]
+T_ENV = 25.0             # ambient temperature [°C]
 K_HEAT = 0.002           # heating coeff (~omega^2 contribution to temp) [°C/(rad/s)^2]
 
-# --- Hydraulics (toy but causal) ---
-K_Q = 0.015              # flow proportionality [L/s per (rad/s)]
-K_P = 0.06               # pressure proportionality [bar per (rad/s * valve)]
+# --- Hydraulics (scaled to Helwig dataset) ---
+K_Q = 0.36               # ↑ flow proportionality [L/s per (rad/s)]
+K_P = 2.0                # ↑ pressure proportionality [bar per (rad/s * valve)]
 CAVITATION_OMEGA = 200.0 # omega scale where cavitation risk starts
 
 # --- Vibration proxy ---

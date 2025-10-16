@@ -54,7 +54,7 @@ def hx(x, u):
     flow = C.K_Q * omega * valve / cav  # L/s
 
     # Pressure ~ K_P * valve * omega  (toy relation)
-    pressure = C.K_P * valve * omega    # bar
+    pressure = C.K_P * valve * omega * (1 - 0.2 * np.tanh((omega - 200)/200))
 
     # Vibration proxy ~ K_VIB * theta * omega^2
     vibration = C.K_VIB * theta * (omega ** 2)  # g (proxy)
